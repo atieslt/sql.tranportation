@@ -26,26 +26,28 @@ namespace WindowsFormsApp2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            sql4.Open();
-            SqlDataAdapter data = new SqlDataAdapter("addNewTicket", sql4);
+            SqlDataAdapter data = new SqlDataAdapter("checkticket_taxi", sql4);
             data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            data.SelectCommand.Parameters.Add("@idcode", SqlDbType.Char, (10)).Value = textBox1.Text;
+            data.SelectCommand.Parameters.AddWithValue("@Orgin", txtorigin.Text.Trim());
+            data.SelectCommand.Parameters.AddWithValue("@Distination", txtdistination.Text.Trim());
+            data.SelectCommand.Parameters.AddWithValue("@Date", txtticketdate.Text.Trim());
+            DataTable da = new DataTable();
+            data.Fill(da);
 
-            data.SelectCommand.Parameters.Add("@origin", SqlDbType.VarChar, (25)).Value = txtorigin.Text;
-            //data.SelectCommand.Parameters.Add("@capacity", SqlDbType.Int).Value = txtcapacity.Text;//int
-            //data.SelectCommand.Parameters.Add("@price", SqlDbType.VarChar, (15)).Value = txtprice.Text;
-            data.SelectCommand.Parameters.Add("@distination", SqlDbType.VarChar, (25)).Value = txtdistination.Text;
-            data.SelectCommand.Parameters.Add("@ticketdate", SqlDbType.Date).Value = txtticketdate.Text;
-            //data.SelectCommand.Parameters.Add("@tickettime", SqlDbType.DateTime).Value = txttickettime.Text;
-            //data.SelectCommand.Parameters.Add("@ticketid", SqlDbType.Char, (10)).Value = txtticketid.Text;
-            //data.SelectCommand.Parameters.Add("@branchid", SqlDbType.Int).Value = txtbranchid.Text;
+            if (da.Rows.Count == 0)
+            {
+                MessageBox.Show(".نام کاربری یا رمز عبور خود را اشتباه وارد کرده اید", "!توجه");
+                txtorigin.ResetText();
+                txtdistination.ResetText();
+                txtticketdate.Focus();
+            }
+            else
+            {
 
-            data.SelectCommand.ExecuteNonQuery();
-
-            MessageBox.Show("Choose type of vehicle  ");
-            new type_of_ticket().Show();
-            this.Close();
+            }
         }
     }
 }
