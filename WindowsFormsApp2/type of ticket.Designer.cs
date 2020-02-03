@@ -66,6 +66,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Freight Train";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -73,8 +74,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(127, 67);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Domwstic Flight";
+            this.button4.Text = "Domestic Flight";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -84,6 +86,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Freight Ship";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -103,6 +106,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Passenger Train";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -112,12 +116,13 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Passenger Ship";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // type_of_ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 382);
+            this.ClientSize = new System.Drawing.Size(401, 413);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -128,6 +133,7 @@
             this.Controls.Add(this.button1);
             this.Name = "type_of_ticket";
             this.Text = "type_of_ticket";
+            this.Load += new System.EventHandler(this.type_of_ticket_Load);
             this.ResumeLayout(false);
 
         }

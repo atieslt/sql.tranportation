@@ -23,15 +23,53 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new bus().Show();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            new taxi().Show();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+            new International_Fight().Show();
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Freight_Train().Show();
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new Passenger_Train().Show();
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Domwstic_Flight().Show();
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Freight_Ship().Show();
+         
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new Passenger_Ship().Show();
+          
+        }
+
+        private void type_of_ticket_Load(object sender, EventArgs e)
         {
 
         }

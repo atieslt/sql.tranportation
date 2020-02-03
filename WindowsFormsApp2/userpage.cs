@@ -24,7 +24,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new buyticket().Show();
             this.Close();
         }
     }
