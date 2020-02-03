@@ -77,6 +77,18 @@
     <Compile Include="sign in.Designer.cs">
       <DependentUpon>sign in.cs</DependentUpon>
     </Compile>
+    <Compile Include="type of ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="type of ticket.Designer.cs">
+      <DependentUpon>type of ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userpage.Designer.cs">
+      <DependentUpon>userpage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +112,12 @@
     </Compile>
     <EmbeddedResource Include="sign in.resx">
       <DependentUpon>sign in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="type of ticket.resx">
+      <DependentUpon>type of ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userpage.resx">
+      <DependentUpon>userpage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

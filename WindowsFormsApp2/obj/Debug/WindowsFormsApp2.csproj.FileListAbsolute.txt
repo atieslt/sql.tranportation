@@ -17,3 +17,8 @@ C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranpor
 C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
 C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form3.resources
+C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.type_of_ticket.resources
+C:\Users\MyPc\Documents\Visual Studio 2017\Projects\WindowsFormsApp2\sql.tranportation\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.userpage.resources

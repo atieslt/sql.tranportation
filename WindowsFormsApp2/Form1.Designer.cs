@@ -35,13 +35,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtticketdate = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtidcode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(30, 327);
+            this.button1.Location = new System.Drawing.Point(30, 208);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 41);
             this.button1.TabIndex = 0;
@@ -60,7 +58,7 @@
             // 
             // txtorigin
             // 
-            this.txtorigin.Location = new System.Drawing.Point(100, 46);
+            this.txtorigin.Location = new System.Drawing.Point(115, 49);
             this.txtorigin.Name = "txtorigin";
             this.txtorigin.Size = new System.Drawing.Size(100, 22);
             this.txtorigin.TabIndex = 2;
@@ -68,23 +66,25 @@
             // 
             // txtdistination
             // 
-            this.txtdistination.Location = new System.Drawing.Point(100, 80);
+            this.txtdistination.Location = new System.Drawing.Point(115, 90);
             this.txtdistination.Name = "txtdistination";
             this.txtdistination.Size = new System.Drawing.Size(100, 22);
             this.txtdistination.TabIndex = 9;
+            this.txtdistination.TextChanged += new System.EventHandler(this.txtdistination_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 80);
+            this.label4.Location = new System.Drawing.Point(27, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "distination";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtticketdate
             // 
-            this.txtticketdate.Location = new System.Drawing.Point(100, 108);
+            this.txtticketdate.Location = new System.Drawing.Point(115, 128);
             this.txtticketdate.Name = "txtticketdate";
             this.txtticketdate.Size = new System.Drawing.Size(100, 22);
             this.txtticketdate.TabIndex = 11;
@@ -92,35 +92,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 111);
+            this.label5.Location = new System.Drawing.Point(26, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 17);
             this.label5.TabIndex = 10;
             this.label5.Text = "ticket date";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 151);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 17);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "ID code";
-            // 
-            // txtidcode
-            // 
-            this.txtidcode.Location = new System.Drawing.Point(100, 146);
-            this.txtidcode.Name = "txtidcode";
-            this.txtidcode.Size = new System.Drawing.Size(100, 22);
-            this.txtidcode.TabIndex = 18;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 442);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtidcode);
+            this.ClientSize = new System.Drawing.Size(258, 280);
             this.Controls.Add(this.txtticketdate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtdistination);
@@ -144,8 +126,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtticketdate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtidcode;
     }
 }
 
